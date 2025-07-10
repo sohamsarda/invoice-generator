@@ -1,36 +1,58 @@
-# Invoice Generator - React App
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+# Invoice Generator (React)
 
-An Invoice creator project built with React. Add itemized items, configure quantity, prices, tax rates and discounts. Download Invoice as PDFs to your device. Uses [jspdf-react](https://www.npmjs.com/package/jspdf-react) to capture the data from the modal and covert it from canvas -> pdf.
+A professional invoice generator web app for Indian businesses, built with React. Easily create GST-compliant invoices, add itemized products/services, apply Indian tax rates (CGST, SGST, IGST), and download invoices as print-ready PDFs.
 
-### Live Demo
-https://invoice-generator-react.netlify.app/
+---
 
-### Screenshots
-<img src="https://i.imgur.com/wRetnxk.png" style="max-width: 100px; width: 100%; height: auto;">
-<img src="https://i.imgur.com/AZChaei.png" style="max-width: 100px; width: 100%; height: auto;">
-<img src="https://i.imgur.com/Bz3K3DE.png" style="max-width: 100px; width: 100%; height: auto;">
+## Features
+- **GST-compliant Indian Tax Invoice** format
+- Add multiple items with quantity, price, and optional description
+- Supports CGST, SGST, IGST calculations
+- Customizable company and client details (address, GSTIN, etc.)
+- Auto-formatted invoice number (Indian style: INV/YYYY-YY/NNN)
+- Download invoice as a professional, print-ready PDF
+- INR (₹) currency, Indian date format (DD/MM/YYYY)
+- Company logo support
+- Responsive and print-friendly design
+
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or later recommended)
+- npm (comes with Node.js)
 
 ### Installation
-
-```
-git clone https://github.com/johnuberbacher/invoice-generator
-
+```bash
+git clone <your-repo-url>
+cd invoice-generator
 npm install
-
-npm start / npm run build
+npm start
 ```
 
-### To-Do
-- [x] Finish parsing data into Preview Modal
+The app will run at [http://localhost:3000](http://localhost:3000)
 
-- [x] Currency Picker
+---
 
-- [x] Calculate Tax and Discounts
+## Usage
+1. Fill in your company and client details (name, address, GSTIN, etc.)
+2. Add invoice items (description is optional)
+3. Enter tax rates (CGST, SGST, IGST) as needed
+4. Review the invoice preview
+5. Download the invoice as a PDF for printing or sharing
 
-- [ ] Store invoices in Firebase DB
+---
+
+## Customization
+- **Logo:** Replace `src/favicon-32x32.png` with your company logo for branding
+- **Default values:** Edit `src/components/InvoiceForm.js` to set your own default company info
+- **Styling:** Modify CSS in `src/App.css` or component styles for further customization
+
+---
+
+## License
+MIT License
 
 
-### Meta
-
-John Uberbacher – [johnuberbacher.com](https://johnuberbacher.com)
